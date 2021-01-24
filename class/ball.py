@@ -6,7 +6,7 @@ class Ball:
     vel_y = 1.0
         
     def acelerateVelX(self):
-        self.velocity = self.velocity*1.015
+        self.velocity = self.velocity*1.01
 
     def changeYVel(self):
         if self.vel_y < 0:
@@ -29,7 +29,6 @@ class Ball:
             return
     def ChangeVelIfAxisHittedWall(self):
         if self.x > 1080:
-            self.acelerateVelX()
             self.acelerateVelX()
             self.changeXVel()
         

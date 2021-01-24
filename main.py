@@ -6,6 +6,7 @@ import game as Game
 def main():
     Home.start()
     Game.start()
-
     print("{} fez {} ponto(s)!".format(Home.player, Game.COUNT))
+    Home.writeRanking(Home.player, Game.COUNT)
+    Home.printRanking()
 main()

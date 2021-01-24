@@ -18,9 +18,6 @@ def start():
     ball = Ball()
     rectangle = Rectangle()
 
-
-
-
     while ball.x >= 0:
 
 
@@ -32,8 +29,9 @@ def start():
 
         if hitted:
             COUNT = COUNT + 1
+            rectangle.acelerate()
 
-        rectangle.acelerate()
+
         #Pinta  
         gameScreen.fill(BLACK)
         pygame.draw.circle(gameScreen, WHITE, (5 + (int(ball.x)), 5 + int(ball.y)), RADIUS, 0)
