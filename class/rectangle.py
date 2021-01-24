@@ -6,7 +6,7 @@ class Rectangle:
     y_size = 170    
 
     def acelerate(self):
-        self.velocity = self.velocity*1.000005
+        self.velocity = self.velocity*1.007
     def resetVel(self):
         self.vel_y = 0
 
